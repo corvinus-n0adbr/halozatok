@@ -1,0 +1,33 @@
+﻿body 
+{
+    background-color: #0094ff;
+}
+h1 
+{
+    color: #0026ff;
+    text-align:center;
+
+}
+h2
+{
+    color:palevioletred;
+
+}
+div
+{
+   border-bottom:groove 2px darkred; border-radius:30px;
+}
+div.nev
+{
+    border-radius:25px;border:2px solid darkred;background-color:aqua;
+}
+ol
+{
+    list-style-type:square;
+
+}
+p::first-letter
+{
+    font-size:40px;font-weight:bolder;
+}
+
