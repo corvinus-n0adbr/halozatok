@@ -1,5 +1,5 @@
 ﻿var kérdések;
-var kérdésSorszám = 0;
+var kérdésSorszám = 1;
 
 function letöltés() {
     fetch('question.json')
