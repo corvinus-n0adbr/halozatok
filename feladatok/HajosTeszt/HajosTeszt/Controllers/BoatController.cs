@@ -13,11 +13,14 @@ namespace HajosTeszt
     {
         [HttpGet]
         [Route("questions/{sorszám}")]
-        public ActionResult M2(int sorszám)
         {
-            HajostesztContext context = new HajostesztContext();
+        [HttpGet]
+        [Route("question/{sorszámok}")]
+        public ActionResult M1(int sorszámok)
+        {
+            hajostesztContext context = new hajostesztContext();
             var kérdés = (from x in context.Questions
-                          where x.QuestionId == sorszám
+                          where x.QuestionId == sorszámok
                           select x).FirstOrDefault();
 
             if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
